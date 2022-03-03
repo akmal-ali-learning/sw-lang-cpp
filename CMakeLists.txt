@@ -4,7 +4,11 @@ project(akmal-gl VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-file(GLOB SRC_FILES src/*.cpp src/*.h )
+file(GLOB SRC_FILES 
+    src/*.cpp src/*.h 
+    src/*/*.cpp src/*/*.h 
+    src/*/*/*.cpp src/*/*/*.h 
+    src/*/*/*.cpp src/*/*/*.h )
 
 add_executable(akmal-cpp ${SRC_FILES}) 
 
